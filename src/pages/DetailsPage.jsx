@@ -14,6 +14,7 @@ export const DetailsPage = () => {
       <h2>{item.title}</h2>
       <h3>Developer: {item.developer}</h3>
       <p>Description: {item.description}</p>
+      <iframe src={item.link} width={1000} height={700}></iframe>
       <Link to={item.link}>Play</Link>
     </div>
   );
