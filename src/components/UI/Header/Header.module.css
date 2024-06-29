@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.link {
+  font-size: 24px;
+}
+
+.active-link {
+  font-size: 24px;
+  text-decoration-color: red;
+  text-decoration: underline;
+}
