@@ -1,11 +1,9 @@
-import './App.css';
-
-import { Routes, Route } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ContactPage } from './pages/ContactPage';
-import { Structure } from './components/Structure';
-import { DetailsPage } from './pages/DetailsPage';
+import { Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactPage } from "./pages/ContactPage";
+import { Structure } from "./components/Structure";
+import { DetailsPage } from "./pages/DetailsPage";
 
 const App = () => {
   return (
