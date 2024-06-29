@@ -20,7 +20,7 @@ export const AboutPage = () => {
           <h2>{item.title}</h2>
           <img src={item.image} alt="" />
           <p>{item.maxWeight}</p>
-          <Link to={`details/${item.id}`}>View</Link>
+          <Link to={`/detail/${item.id}`}>View</Link>
         </div>
       ))}
     </>
