@@ -1,9 +1,12 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { data } from "../data/data";
 
 export const DetailsPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const item = data.find((item) => item.id === parseInt(id));
+
+  const goBack = () => navigate(-1);
 
   if (!item) {
     return <h1>Not Found</h1>;
@@ -11,6 +14,7 @@ export const DetailsPage = () => {
 
   return (
     <div>
+      <button onClick={goBack}>Go Back</button>
       <h2>{item.title}</h2>
       <h3>Developer: {item.developer}</h3>
       <p>Description: {item.description}</p>
